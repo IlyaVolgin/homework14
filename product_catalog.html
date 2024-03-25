@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Catalog</title>
+</head>
+<body>
+
+<div id="categoryCount">
+</div>
+<div id="productCount">
+
+</div>
+
+<script>
+
+
+function getCategories() {
+    
+    return ['Category1', 'Category2', 'Category3']; 
+}
+
+
+function getProducts() {
+
+    return ['Product1', 'Product2', 'Product3']; 
+}
+
+
+var categories = getCategories();
+var categoryCount = categories.length;
+
+
+var products = getProducts();
+var productCount = products.length;
+
+
+document.getElementById('categoryCount').innerHTML = 'Кількість категорій на сторінці: ' + categoryCount;
+document.getElementById('productCount').innerHTML = 'Кількість товарів на сторінці: ' + productCount;
+</script>
+
+</body>
+</html>
